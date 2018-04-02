@@ -1,5 +1,6 @@
 # GTM_Link_Sender
 Simple app that sends GoToMeeting links on local network as a Windows bat file.
+
 I wrote this because when emailing GoToMeeting links inside of a Citrix environment users would often end up opening the link inside of citrix and prevent me from viewing their screen.
 This provides a fast and simple way around that issue.
 
