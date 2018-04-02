@@ -36,17 +36,17 @@ class FrmMain ( wx.Frame ):
 		self.btnClear = wx.Button( self, wx.ID_ANY, u"Clear", wx.DefaultPosition, wx.DefaultSize, 0 )
 		gbSizer3.Add( self.btnClear, wx.GBPosition( 0, 2 ), wx.GBSpan( 1, 1 ), wx.ALL|wx.EXPAND|wx.ALIGN_CENTER_HORIZONTAL|wx.ALIGN_CENTER_VERTICAL, 5 )
 		
-		self.txtMeetingNum = wx.TextCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0|wx.TAB_TRAVERSAL )
+		self.txtMeetingNum = wx.TextCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
 		gbSizer3.Add( self.txtMeetingNum, wx.GBPosition( 1, 0 ), wx.GBSpan( 1, 3 ), wx.ALL|wx.ALIGN_CENTER_HORIZONTAL|wx.ALIGN_CENTER_VERTICAL|wx.EXPAND, 5 )
 		
 		self.m_staticText9 = wx.StaticText( self, wx.ID_ANY, u"Computer", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText9.Wrap( -1 )
 		gbSizer3.Add( self.m_staticText9, wx.GBPosition( 2, 0 ), wx.GBSpan( 1, 3 ), wx.ALL|wx.EXPAND|wx.ALIGN_CENTER_HORIZONTAL|wx.ALIGN_CENTER_VERTICAL, 5 )
 		
-		self.txtComputer = wx.TextCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0|wx.TAB_TRAVERSAL )
+		self.txtComputer = wx.TextCtrl( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
 		gbSizer3.Add( self.txtComputer, wx.GBPosition( 3, 0 ), wx.GBSpan( 1, 2 ), wx.ALL|wx.EXPAND|wx.ALIGN_CENTER_HORIZONTAL|wx.ALIGN_CENTER_VERTICAL, 5 )
 		
-		self.btnPopulate = wx.Button( self, wx.ID_ANY, u"Populate", wx.DefaultPosition, wx.DefaultSize, 0|wx.TAB_TRAVERSAL )
+		self.btnPopulate = wx.Button( self, wx.ID_ANY, u"Populate", wx.DefaultPosition, wx.DefaultSize, 0 )
 		gbSizer3.Add( self.btnPopulate, wx.GBPosition( 3, 2 ), wx.GBSpan( 1, 1 ), wx.ALL|wx.EXPAND|wx.ALIGN_CENTER_HORIZONTAL|wx.ALIGN_CENTER_VERTICAL, 5 )
 		
 		self.lblUsername = wx.StaticText( self, wx.ID_ANY, u"Username", wx.DefaultPosition, wx.DefaultSize, 0 )
@@ -54,10 +54,10 @@ class FrmMain ( wx.Frame ):
 		gbSizer3.Add( self.lblUsername, wx.GBPosition( 4, 0 ), wx.GBSpan( 1, 1 ), wx.ALL|wx.EXPAND|wx.ALIGN_CENTER_HORIZONTAL|wx.ALIGN_CENTER_VERTICAL, 5 )
 		
 		cboUsernameChoices = []
-		self.cboUsername = wx.ComboBox( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, cboUsernameChoices, 0|wx.TAB_TRAVERSAL )
+		self.cboUsername = wx.ComboBox( self, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, cboUsernameChoices, 0 )
 		gbSizer3.Add( self.cboUsername, wx.GBPosition( 5, 0 ), wx.GBSpan( 1, 3 ), wx.ALL|wx.EXPAND|wx.ALIGN_CENTER_HORIZONTAL|wx.ALIGN_CENTER_VERTICAL, 5 )
 		
-		self.btnCopy = wx.Button( self, wx.ID_ANY, u"Copy Help Link", wx.DefaultPosition, wx.DefaultSize, 0|wx.TAB_TRAVERSAL )
+		self.btnCopy = wx.Button( self, wx.ID_ANY, u"Copy Help Link", wx.DefaultPosition, wx.DefaultSize, 0 )
 		gbSizer3.Add( self.btnCopy, wx.GBPosition( 6, 0 ), wx.GBSpan( 1, 3 ), wx.ALL|wx.ALIGN_CENTER_HORIZONTAL|wx.ALIGN_CENTER_VERTICAL|wx.EXPAND, 5 )
 		
 		

@@ -431,7 +431,7 @@
                         <property name="value"></property>
                         <property name="window_extra_style"></property>
                         <property name="window_name"></property>
-                        <property name="window_style">wxTAB_TRAVERSAL</property>
+                        <property name="window_style"></property>
                         <event name="OnChar"></event>
                         <event name="OnEnterWindow"></event>
                         <event name="OnEraseBackground"></event>
@@ -611,7 +611,7 @@
                         <property name="value"></property>
                         <property name="window_extra_style"></property>
                         <property name="window_name"></property>
-                        <property name="window_style">wxTAB_TRAVERSAL</property>
+                        <property name="window_style"></property>
                         <event name="OnChar"></event>
                         <event name="OnEnterWindow"></event>
                         <event name="OnEraseBackground"></event>
@@ -705,7 +705,7 @@
                         <property name="validator_variable"></property>
                         <property name="window_extra_style"></property>
                         <property name="window_name"></property>
-                        <property name="window_style">wxTAB_TRAVERSAL</property>
+                        <property name="window_style"></property>
                         <event name="OnButtonClick">btnPopulateClick</event>
                         <event name="OnChar"></event>
                         <event name="OnEnterWindow"></event>
@@ -883,7 +883,7 @@
                         <property name="value"></property>
                         <property name="window_extra_style"></property>
                         <property name="window_name"></property>
-                        <property name="window_style">wxTAB_TRAVERSAL</property>
+                        <property name="window_style"></property>
                         <event name="OnChar"></event>
                         <event name="OnCombobox"></event>
                         <event name="OnEnterWindow"></event>
@@ -976,7 +976,7 @@
                         <property name="validator_variable"></property>
                         <property name="window_extra_style"></property>
                         <property name="window_name"></property>
-                        <property name="window_style">wxTAB_TRAVERSAL</property>
+                        <property name="window_style"></property>
                         <event name="OnButtonClick">btnCopyClick</event>
                         <event name="OnChar"></event>
                         <event name="OnEnterWindow"></event>
