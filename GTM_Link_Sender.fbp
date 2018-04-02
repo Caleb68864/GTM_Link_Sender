@@ -3,7 +3,7 @@
     <FileVersion major="1" minor="13" />
     <object class="Project" expanded="1">
         <property name="class_decoration"></property>
-        <property name="code_generation">C++</property>
+        <property name="code_generation">Python</property>
         <property name="disconnect_events">1</property>
         <property name="disconnect_mode">source_name</property>
         <property name="disconnect_php_events">0</property>
@@ -11,11 +11,11 @@
         <property name="embedded_files_path">res</property>
         <property name="encoding">UTF-8</property>
         <property name="event_generation">connect</property>
-        <property name="file"></property>
+        <property name="file">FrmMain</property>
         <property name="first_id">1000</property>
         <property name="help_provider">none</property>
         <property name="internationalize">0</property>
-        <property name="name">MyProject1</property>
+        <property name="name">GTM_Link_Sender</property>
         <property name="namespace"></property>
         <property name="path">.</property>
         <property name="precompiled_header"></property>
@@ -229,7 +229,7 @@
                         <property name="minimize_button">0</property>
                         <property name="minimum_size">-1,-1</property>
                         <property name="moveable">1</property>
-                        <property name="name">m_button2</property>
+                        <property name="name">btnOpenGTM</property>
                         <property name="pane_border">1</property>
                         <property name="pane_position"></property>
                         <property name="pane_size"></property>
@@ -250,7 +250,7 @@
                         <property name="window_extra_style"></property>
                         <property name="window_name"></property>
                         <property name="window_style"></property>
-                        <event name="OnButtonClick"></event>
+                        <event name="OnButtonClick">btnOpenGTMClick</event>
                         <event name="OnChar"></event>
                         <event name="OnEnterWindow"></event>
                         <event name="OnEraseBackground"></event>
@@ -320,7 +320,7 @@
                         <property name="minimize_button">0</property>
                         <property name="minimum_size">-1,-1</property>
                         <property name="moveable">1</property>
-                        <property name="name">m_button3</property>
+                        <property name="name">btnClear</property>
                         <property name="pane_border">1</property>
                         <property name="pane_position"></property>
                         <property name="pane_size"></property>
@@ -341,7 +341,7 @@
                         <property name="window_extra_style"></property>
                         <property name="window_name"></property>
                         <property name="window_style"></property>
-                        <event name="OnButtonClick"></event>
+                        <event name="OnButtonClick">btnClearClick</event>
                         <event name="OnChar"></event>
                         <event name="OnEnterWindow"></event>
                         <event name="OnEraseBackground"></event>
@@ -431,7 +431,7 @@
                         <property name="value"></property>
                         <property name="window_extra_style"></property>
                         <property name="window_name"></property>
-                        <property name="window_style"></property>
+                        <property name="window_style">wxTAB_TRAVERSAL</property>
                         <event name="OnChar"></event>
                         <event name="OnEnterWindow"></event>
                         <event name="OnEraseBackground"></event>
@@ -611,7 +611,7 @@
                         <property name="value"></property>
                         <property name="window_extra_style"></property>
                         <property name="window_name"></property>
-                        <property name="window_style"></property>
+                        <property name="window_style">wxTAB_TRAVERSAL</property>
                         <event name="OnChar"></event>
                         <event name="OnEnterWindow"></event>
                         <event name="OnEraseBackground"></event>
@@ -705,7 +705,7 @@
                         <property name="validator_variable"></property>
                         <property name="window_extra_style"></property>
                         <property name="window_name"></property>
-                        <property name="window_style"></property>
+                        <property name="window_style">wxTAB_TRAVERSAL</property>
                         <event name="OnButtonClick">btnPopulateClick</event>
                         <event name="OnChar"></event>
                         <event name="OnEnterWindow"></event>
@@ -883,7 +883,7 @@
                         <property name="value"></property>
                         <property name="window_extra_style"></property>
                         <property name="window_name"></property>
-                        <property name="window_style"></property>
+                        <property name="window_style">wxTAB_TRAVERSAL</property>
                         <event name="OnChar"></event>
                         <event name="OnCombobox"></event>
                         <event name="OnEnterWindow"></event>
@@ -976,7 +976,7 @@
                         <property name="validator_variable"></property>
                         <property name="window_extra_style"></property>
                         <property name="window_name"></property>
-                        <property name="window_style"></property>
+                        <property name="window_style">wxTAB_TRAVERSAL</property>
                         <event name="OnButtonClick">btnCopyClick</event>
                         <event name="OnChar"></event>
                         <event name="OnEnterWindow"></event>

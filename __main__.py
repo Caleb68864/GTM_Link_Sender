@@ -2,6 +2,7 @@ import pandas
 import os
 import wx
 import FrmMain
+import webbrowser
 from difflib import get_close_matches
 
 class MyFrame(wx.Frame):
@@ -22,12 +23,14 @@ class MyFrame(wx.Frame):
 
     def getUsersDir(self):
         computer = self.txtComputer.GetValue()
-        usersDir = "\\\\{}\\C$\\Users".format(computer)
-        if os.path.exists(usersDir):
-            return usersDir
+        if computer != "":
+            usersDir = "\\\\{}\\C$\\Users".format(computer)
+            if os.path.exists(usersDir):
+                return usersDir
+            else:
+                print("That Computer Does Not Exist")
         else:
-            print("That Computer Does Not Exist")
-            exit()
+            print("Computer Field Empty")
 
     def getUsers(self, usersDir):
         # print(usersDir)
@@ -37,6 +40,8 @@ class MyFrame(wx.Frame):
         except AttributeError:
             return []
         except OSError:
+            return []
+        except TypeError:
             return []
 
     def getUser(self, users):
@@ -62,13 +67,26 @@ class MyFrame(wx.Frame):
         except AttributeError as e:
             print(e)
 
-    def btnPopulateClick(self, instance):
-        usersdir = self.getUsersDir()
-        users = self.getUsers(usersdir)
-        print(users)
-        self.cboUsername.Append(users)
-        self
+    def btnOpenGTMClick(self, instance):
+        try:
+            webbrowser.open("https://www.gotomeeting.com", new=0, autoraise=True)
+        except AttributeError as e:
+            print(e)
 
+    def btnClearClick(self, instance):
+        self.txtComputer.SetValue("")
+        self.txtMeetingNum.SetValue("")
+        self.cboUsername.Clear()
+
+    def btnPopulateClick(self, instance):
+        try:
+            usersdir = self.getUsersDir()
+            users = self.getUsers(usersdir)
+            print(users)
+            self.cboUsername.Clear()
+            self.cboUsername.Append(users)
+        except AttributeError as e:
+            print(e)
 
     def btnCopyClick(self, instance):
         self.createLink(self.txtMeetingNum.GetValue())
